@@ -2,7 +2,6 @@ animals = input()
 
 list_animals = animals.split(', ')
 list_animals.reverse()
-
 wolf = 0
 
 for index in range(len(list_animals)):
@@ -15,3 +14,9 @@ for index in range(len(list_animals)):
             wolf -= 1
             print(f"Oi! Sheep number {wolf + 1}! You are about to be eaten by a wolf!")
         break
+
+
+
+
+
+
