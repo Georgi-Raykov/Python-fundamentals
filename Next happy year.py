@@ -6,6 +6,7 @@ while not is_happy:
     set_year = set(str_year)
     is_happy = len(set_year) == len(str_year)
 
+
 print(year)
 
 
