@@ -10,8 +10,12 @@ def decipher(message):
         number = int(str_number)
         ch = chr(number)
         word = word.replace(str_number, '')
-        word = word[::-1]
-        word = ch + word
+        if len(word) > 1:
+            remaining_part = word[-1] + word[1:-1] + word[0]
+            word = ch + remaining_part
+        else:
+            word = ch + word
+
         new_message.append(word)
     return ' '.join(new_message)
 
